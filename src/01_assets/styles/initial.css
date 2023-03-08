@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "Whitney";
+	font-style: normal;
+	font-weight: 500;
+	src: local("Whitney"),
+		url("src/00_assets/fonts/whitneymedium.woff") format("woff");
+}
+@font-face {
+	font-family: "Whitney Book";
+	font-style: normal;
+	font-weight: 500;
+	src: local("Whitney Book"),
+		url("src/00_assets/fonts/whitneybook.woff") format("woff");
+}

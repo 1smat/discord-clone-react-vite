@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	font-family: "Whitney Book", sans-serif;
+}
+
+img {
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+	user-select: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+@layer components {
+	.sidebar-container {
+		@apply relative flex min-h-0 flex-auto flex-col overflow-x-hidden
+        overflow-y-scroll pt-3;
+	}
+
+	.sidebar-icon-wrap {
+		@apply relative mb-2 flex w-[72px] justify-center;
+	}
+
+	.sidebar-icon {
+		@apply relative flex h-12 w-12 cursor-pointer items-center
+        justify-center rounded-3xl
+        shadow-sm transition-all duration-150
+        ease-linear hover:rounded-2xl;
+	}
+
+	.sidebar-icon-image {
+		@apply relative flex h-12 w-12 cursor-pointer items-center
+        justify-center rounded-3xl
+        transition-all duration-150 ease-linear
+        hover:rounded-2xl;
+	}
+
+	.sidebar-icon-color {
+		@apply bg-white text-green-500 hover:bg-green-500 
+      hover:text-white;
+	}
+
+	.sidebar-icon-color-main {
+		@apply bg-white text-gray-800 hover:bg-blue-500;
+	}
+
+	.sidebar-tooltip {
+		@apply pointer-events-none absolute left-14 z-[100] m-2 w-auto min-w-max origin-left scale-95
+        rounded-md bg-white p-2 text-xs
+        font-bold text-gray-900 
+        opacity-0 shadow-md transition-all duration-100;
+	}
+
+	.sidebar-icon:hover .sidebar-tooltip {
+		@apply scale-100 opacity-100;
+	}
+
+	.sidebar-hr {
+		@apply w-8 rounded-full 
+        border border-gray-400 bg-gray-400;
+	}
+}
