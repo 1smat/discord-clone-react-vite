@@ -20,3 +20,20 @@ export const servers: IServer[] = [
     { header: "dev chat", sub: ["react", "vite" ,"tailwind-css"] },
   ];
   
+
+  export const chatMessages = [
+    {
+      name: "Ismat",
+      timestamp: "Today at 4:35 PM",
+      text: "Hello",
+      image: "https://yt3.googleusercontent.com/RIZShYWEREiuNks5Hok79M1uepUPpQq8c7D8J7p-B2iPGxgb-NxU8o4KBzwcXku4yylYwkOrYw=s176-c-k-c0x00ffffff-no-rj"
+    },
+    {
+      name: "Higuain",
+      timestamp: "Today at 4:36 PM",
+      text: "Hello?",
+      image: "https://img.a.transfermarkt.technology/portrait/big/39153-1647683336.jpg?lm=1"
+    },
+  
+  ];
+  

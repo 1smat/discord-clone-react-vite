@@ -1,8 +1,10 @@
-import { DiscordDownloadIcon } from 'src/06_utils/DiscordIcons';
+import { DiscordDownloadIcon } from 'src/05_utils/DiscordIcons';
 import { FaDiscord } from 'react-icons/fa';
 import { IoMdCompass } from 'react-icons/io';
 import { IoAddSharp } from 'react-icons/io5';
-import { IServer, servers } from 'src/06_utils/Data';
+import { IServer, servers } from 'src/05_utils/Data';
+import SideBarIcon from './components/SideBarIcon';
+import Divider from './components/Divider';
 
 const SideBar = () => {
     return (
@@ -27,7 +29,6 @@ const SideBar = () => {
                 ))}
                 <SideBarIcon
                     icon={<IoAddSharp size='25' />}
-
                 />
                 <SideBarIcon
                     icon={<IoMdCompass size='23' />}
@@ -44,28 +45,5 @@ const SideBar = () => {
     );
 };
 
-const SideBarIcon = ({ icon, image = false, main = false }: any) => {
-    let IconColor = '';
-    if (!image) {
-        main
-            ? (IconColor = 'sidebar-icon-color-main')
-            : (IconColor = 'sidebar-icon-color');
-    }
-    return (
-        <div className='sidebar-icon-wrap'>
-            <div
-                className={`sidebar-icon ${image ? '' : `${IconColor}`
-                    }`}>
-                {icon}
-            </div>
-        </div>
-    );
-};
-
-const Divider = () => (
-    <div className='sidebar-icon-wrap'>
-        <hr className='sidebar-hr' />
-    </div>
-);
 
 export default SideBar;
