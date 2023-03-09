@@ -11,4 +11,12 @@ export const servers: IServer[] = [
     },
   ];
 
+  export const channels = [
+    {
+      header: "general",
+      sub: ["general", "chill-chat", "memes"],
+    },
+    { header: "game", sub: ["mine-sweeper", "snake", "tic-tac-toe"] },
+    { header: "dev chat", sub: ["react", "vite" ,"tailwind-css"] },
+  ];
   

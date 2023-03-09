@@ -15,6 +15,10 @@ img {
 	user-select: none;
 }
 
+.shadow-sm-discord {
+	box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 1px;
+}
+
 .hide-scrollbar::-webkit-scrollbar {
 	display: none;
 }
@@ -66,5 +70,25 @@ img {
 	.sidebar-hr {
 		@apply w-8 rounded-full 
         border border-gray-400 bg-gray-400;
+	}
+
+	/* channel list */
+
+	.channel-list {
+		@apply relative m-0 flex min-h-0 w-60 flex-shrink-0 flex-grow-0 flex-col items-stretch justify-start
+    overflow-hidden bg-gray-100 dark:bg-gray-800;
+	}
+
+	.channel-block {
+		@apply relative z-[3] items-center py-3 px-4
+    transition duration-100 hover:bg-gray-400;
+	}
+
+	.channel-block-text {
+		@apply h-6 text-base font-semibold
+    text-black dark:text-gray-400;
+	}
+	.dropdown-header {
+		@apply relative mx-0 flex h-6 cursor-pointer items-center justify-between pr-2 pl-4 text-gray-500;
 	}
 }
