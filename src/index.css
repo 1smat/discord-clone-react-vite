@@ -82,7 +82,7 @@ img {
 
 	.channel-block {
 		@apply relative z-[3] items-center py-3 px-4
-    transition duration-100 hover:bg-gray-400;
+    transition duration-100;
 	}
 
 	.channel-block-text {
@@ -119,7 +119,7 @@ img {
 	}
 
 	.post {
-		@apply relative py-0.5 pl-[72px] pr-12 hover:bg-gray-50;
+		@apply relative py-0.5 pl-[72px] pr-12;
 	}
 
 	.post-selected {

@@ -2,9 +2,10 @@ import { useState } from "react";
 import ChevronIcon from "../ChevronIcon";
 import { DiscordAddIcon } from "src/utils/DiscordIcons";
 import TopicSelection from "../TopicSelection";
+import { IChannel } from "src/utils/Data";
 
 
-const Dropdown = ({ header, selections }: any) => {
+const Dropdown = ({ header, sub }: IChannel) => {
     const [expanded, setExpanded] = useState(true);
 
     return (
@@ -21,9 +22,9 @@ const Dropdown = ({ header, selections }: any) => {
                 </div>
             </li>
             {expanded &&
-                selections &&
-                selections.map((selection: any, id: number) => (
-                    <TopicSelection key={id} selection={selection} />
+                sub &&
+                sub.map((sub: string, id: number) => (
+                    <TopicSelection key={id} sub={sub} />
                 ))}
         </>
     );

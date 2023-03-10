@@ -1,4 +1,6 @@
-const Post = ({ name, timestamp, text, image }: any) => {
+import { IChatMessage } from "src/utils/Data";
+
+const Post = ({ name, timestamp, text, image }: IChatMessage) => {
 
     return (
         <div className="post mt-[17px]">

@@ -1,5 +1,5 @@
 import Navigation from "src/modules/Navigation";
-import { chatMessages } from "src/utils/Data";
+import { IChatMessage, chatMessages } from "src/utils/Data";
 import Post from "./components/Post";
 import BottomBar from "./components/BottomBar";
 
@@ -12,7 +12,7 @@ const Content = () => {
                     <div className="relative z-0 flex min-h-0 min-w-0 flex-auto">
                         <div className="absolute top-0 bottom-0 left-0 right-0 overflow-x-hidden overflow-y-scroll">
                             <div className="content-list">
-                                {chatMessages.map((message: any, id: number) => (
+                                {chatMessages.map((message: IChatMessage, id: number) => (
                                     <Post
                                         name={message.name}
                                         timestamp={message.timestamp}

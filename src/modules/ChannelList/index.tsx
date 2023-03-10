@@ -18,7 +18,7 @@ const ChannelList = () => {
                         {channels.map((channel, id) => (
                             <Dropdown
                                 header={channel.header}
-                                selections={channel.sub}
+                                sub={channel.sub}
                                 key={id}
                             />
                         ))}
