@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import Main from './02_pages/Main'
+import Main from './pages/Main'
 
 
 const App = () => {
